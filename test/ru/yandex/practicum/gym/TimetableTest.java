@@ -104,11 +104,11 @@ public class TimetableTest {
     }
 
     @Test
-    void testSholdGetNoSessionsThatCreatedByMondayAndAt130AndGotForFriday() {
+    void testShouldGetNoSessionsForFriday() {
         Timetable timetable = new Timetable();
 
         Group group1 = new Group("Акробатика для детей", Age.CHILD, 60);
-        Group group2 = new Group("Бокс для взросых", Age.ADULT, 90);
+        Group group2 = new Group("Бокс для взрослых", Age.ADULT, 90);
         Coach coach = new Coach("Васильев", "Николай", "Сергеевич");
         TrainingSession firstTrainingSession = new TrainingSession(group1, coach,
                 DayOfWeek.MONDAY, new TimeOfDay(13, 0));
