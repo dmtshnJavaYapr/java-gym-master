@@ -23,7 +23,7 @@ public class TimeOfDay implements Comparable<TimeOfDay> {
     }
 
     @Override
-    public int compareTo(TimeOfDay t){
+    public int compareTo(TimeOfDay t) {
         if (this.getHours() != t.getHours())
             return Integer.compare(this.getHours(), t.getHours());
 
