@@ -15,7 +15,7 @@ public class TrainingSession implements Comparable<TrainingSession> {
     }
 
     @Override
-    public int compareTo (TrainingSession t) {
+    public int compareTo(TrainingSession t) {
         return timeOfDay.compareTo(t.getTimeOfDay());
     }
 
